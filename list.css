@@ -1,0 +1,70 @@
+.listContainer{
+    /* position: absolute; */
+    background-color:rgba(0,151, 19, 0.15);
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    border-radius: 2%;
+    padding: 3vw;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.listItem{
+    position: relative;
+    z-index: 1;
+    background-color:rgba(0,151, 19, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    margin-top: 4vh;
+    justify-content: row;
+    transition: transform 0.5s;
+    border-radius:10px;
+    padding: 2%;
+}
+
+.listItemContainer:hover > .listItem{
+    transform :scale(1.1);
+
+    background-color: rgb(74, 251, 42);
+    border: 2px solid black;
+}
+
+.listItemContainer:hover >.listItem > .itemRank{
+    transform :scale(1.5);
+}
+
+.listItemContainer:hover >.listItem > .listText{
+    color: #4373fa;
+}
+
+.itemRank{
+    transform: scale(0);
+    transition: transform 0.9s;
+    text-align: center;
+    color: #df0086;
+
+}
+
+.listHeading{
+    text-align: center;
+    /* color:chartreuse; */
+    background-color: #d71389;
+    display: block;
+}
+
+.listImg{
+    text-align: center;
+    /* border: 3px solid red; */
+}
+
+.listImg > img{
+    /* width: 100%; */
+    height: 100%;
+}
+
+.listText{
+    transition: color 0.5s;
+    color: #05e8ff;
+    text-align: center;
+}
