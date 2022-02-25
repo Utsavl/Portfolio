@@ -16,13 +16,14 @@ function changeWidth(percentage){
     ele.style.width = `${newWidth}vw`;
 }
 
-
+window.onscroll = function(){slideBox()}
 // Checks if page scrolled or not
-setInterval(() => {
+function slideBox(){
 
     // Getting the percentage scrolled of slider box
 
     var gap = ele.getBoundingClientRect().bottom;
+    // console.log("the gap is : ",gap);
 
     if (gap>=0){
         let scrolledPercent  = ((height-gap)/height)*100;
@@ -32,30 +33,34 @@ setInterval(() => {
 
 
 
+}
+
+setInterval(() => {
+    
     // This is for description animation of typewriter
     if (cursorPosition==0){
         descIndex +=1
         cursorPosition =1
     }
-
+    
     if(descIndex ==4){descIndex =0;}
-
-
+    
+    
     if(cursorPosition <= descArray[descIndex].length){
-
+    
         
         let txt = descArray[descIndex].slice(0,Math.abs(cursorPosition));
-
+    
         description.innerHTML = txt;
-
-
-
+    
+    
+    
         cursorPosition +=1
-
+    
     }
-
+    
     else{
-
+    
         setTimeout(() => {
             
             cursorPosition = -1*(cursorPosition-1)

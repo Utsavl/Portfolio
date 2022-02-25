@@ -1,29 +1,30 @@
 .projectContainer{
+    display:none;
    margin-top: 5vh;
+   overflow: hidden;
 }
 
-.trial{
-    height: 200vh;
+.pc{
+    /* width: 101vw; */
+    height: 104vh;
+    overflow: scroll;
 }
 
+.psection{
+    height: 102vh;
+    overflow: hidden;
+}
 
 #project1{
-    height: 100vh;
     background-image: linear-gradient(90deg, red, yellow);
 }
 #project2{
-    height: 100vh;
     background-image: linear-gradient(90deg, rgb(162, 0, 255), rgb(251, 50, 15));
-    /* overflow: hidden; */
-
 }
 #project3{
-    height: 100vh;
     background-image: linear-gradient(90deg, cyan, rgb(0, 60, 172));
-    /* overflow: hidden; */
 }
 #project4{
-    height: 100vh;
     background-image: linear-gradient(90deg, rgb(250, 56, 192), rgb(191, 194, 7));
 }
 
@@ -40,9 +41,6 @@
     background-color:  rgb(248, 80, 248);
 }
 
-
-
-
 .projectImg{
     overflow: hidden;
     position: relative;
@@ -54,19 +52,16 @@
 }
 
 .projectSlider{
-    background-color: rgb(255, 124, 248);
-    height: 100%;
     width: 0;
-    animation: slideOnImg 0.6s linear ;
+    height: 100%;
+    background-color: rgb(255, 124, 248);
 }
 
 .projectRank{
-    position: absolute;
     width: 15vw;
     height: 25vh;
     margin-left: 3vw;
     margin-top: -20vh;
-    /* border:7px solid darkmagenta; */
     overflow: hidden;
 }
 
@@ -74,34 +69,25 @@
     margin-top: -2%;
     font-size: 20vh;
     line-height: 25vh;
-    animation: projectRank 1s ease-out;
 }
 
 .projectHeading{
     height: 15vh;
     margin-left: 30vw;
     margin-top: -80vh;
-    /* border: 2px solid bisque; */
 }
-
-
 
 .projectHeading > h1{
     width: 100%;
     margin: 0 auto;
     font-size: 10vh;
     line-height: 15vh;
-    /* border: 2px solid black; */
-    animation: projectHeading 1s ease-out;
 }
 
 .headingLine{
-
     display: block;
-    position: absolute;
     border: 2px solid rgb(255, 174, 174);
     width: 15vw;
-    /* height: 39vh; */
     border-radius: 1030%;
 }
 #firstLine{
@@ -110,14 +96,13 @@
 }
 #secondLine{
     margin-left: 62vw;
-    margin-top: 4vh;
 }
 
 .projectButtons{
     position: relative;
     width: 15vw;
     height: 16vh;
-    margin-top:25vh;
+    margin-top:15vh;
     margin-left: 55vw;
 }
 
@@ -139,8 +124,7 @@
     font-size: 2em;
     transition: transform 0.5s;
     background-color: rgb(255, 221, 127);
-    border: 3px inset rgb(12, 12, 12);
-    animation: projectButtons 2s ease-out;
+    border: 3px inset #0c0c0c;
 
 }
 
@@ -151,13 +135,11 @@
 
 .projectWritten{
     overflow: hidden;
-    /* padding: 20px; */
     background-color: aqua;
-    position: absolute;
     width: 8vw;
     height: 68vh;
     margin-left: 80vw;
-    margin-top: -64vh;
+    margin-top: -66vh;
     border: 2px solid sandybrown;
 }
 
@@ -169,23 +151,17 @@
     margin-left: 0.6vw;
     font-size: 10vw;
     line-height: 8vw;
-    /* border: 2px solid black; */
-
-
     transform: rotate(90deg);
     transform-origin: 0 8vw;
-    animation:  projectWritten 1s ease-out ;
 }
 
 .projectCircle{
-    /* position: relative; */
     width: 20vh;
     height: 20vh;
     margin-left: 60vw;
     margin-top: 11vh;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    /* background-color: orange; */
 }
 
 
@@ -193,6 +169,31 @@
     font-weight: bold;
     text-align: center;
 
+}
+
+#showProject{
+    width: 30vw;
+    height: 10vh;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 3px;
+    margin: 5vh 0;
+    border: 2px outset black;
+    border-radius: 40px;
+    transform: translate(35vw, 0);
+}
+
+#hideProject{
+    position: absolute;
+    width: 20vw;
+    height: 8vh;
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-left: 55vw;
+    margin-top: -86vh;
+    border-radius: 40px;
+    color: rgb(33, 62, 66);
+    background-color:rgb(176, 251, 0) ;
 }
 
 

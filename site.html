@@ -68,7 +68,7 @@
         </div>
         <div class="listItemContainer">
             <div id="listItem1" class="listItem">
-                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/></div>
+                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" /></div>
                 <div class="listText">
                     <h2>this is item 1</h2>
                 </div>
@@ -79,7 +79,7 @@
         </div>
         <div class="listItemContainer">
             <div id="listItem2" class="listItem">
-                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/css3.png"/></div>
+                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/css3.png" /></div>
                 <div class="listText">
                     <h2>this is heading 2</h2>
                 </div>
@@ -90,7 +90,7 @@
         </div>
         <div class="listItemContainer">
             <div id="listItem3" class="listItem">
-                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/></div>
+                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png" /></div>
                 <div class="listText">
                     <h2>this is heading 3</h2>
                 </div>
@@ -101,7 +101,7 @@
         </div>
         <div class="listItemContainer">
             <div id="listItem4" class="listItem">
-                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/python--v1.png"/></div>
+                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/python--v1.png" /></div>
                 <div class="listText">
                     <h2>this is heading 4</h2>
                 </div>
@@ -112,7 +112,8 @@
         </div>
         <div class="listItemContainer">
             <div id="listItem5" class="listItem">
-                <div class="listImg"><img src="https://img.icons8.com/material-outlined/24/000000/art-prices--v2.png"/></div>
+                <div class="listImg"><img src="https://img.icons8.com/material-outlined/24/000000/art-prices--v2.png" />
+                </div>
                 <div class="listText">
                     <h2>this is heading 5</h2>
                 </div>
@@ -123,7 +124,7 @@
         </div>
         <div class="listItemContainer">
             <div id="listItem5" class="listItem">
-                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/wordpress.png"/></div>
+                <div class="listImg"><img src="https://img.icons8.com/color/48/000000/wordpress.png" /></div>
                 <div class="listText">
                     <h2>this is heading 6</h2>
                 </div>
@@ -134,7 +135,9 @@
         </div>
         <div class="listItemContainer">
             <div id="listItem5" class="listItem">
-                <div class="listImg"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/000000/external-elementor-the-wordpress-page-builder-a-simple-intuitive-drag-and-drop-interface-logo-shadow-tal-revivo.png"/></div>
+                <div class="listImg"><img
+                        src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/000000/external-elementor-the-wordpress-page-builder-a-simple-intuitive-drag-and-drop-interface-logo-shadow-tal-revivo.png" />
+                </div>
                 <div class="listText">
                     <h2>this is heading 7</h2>
                 </div>
@@ -145,7 +148,7 @@
         </div>
         <div class="listItemContainer">
             <div id="listItem5" class="listItem">
-                <div class="listImg"><img src="https://img.icons8.com/fluency/48/000000/adobe-photoshop.png"/></div>
+                <div class="listImg"><img src="https://img.icons8.com/fluency/48/000000/adobe-photoshop.png" /></div>
                 <div class="listText">
                     <h2>this is heading 8</h2>
                 </div>
@@ -155,6 +158,8 @@
             </div>
         </div>
     </div>
+
+    <button id = "showProject" onclick="displayProject()">SHOW PRJECTS</button>
 
 
 
@@ -179,105 +184,120 @@
 
     <div class="projectContainer" onscroll="inform()">
 
-        <section class="section" id='project1'>
-            <div class="projectImg">
-                <div class="projectSlider" id="projectSlider1"></div>
-            </div>
-            <div class="projectRank">
-                <h1 id="projectRank1">01</h1>
-            </div>
-            <div class="projectHeading">
-                <h1 id="projectHeading1">Project number 1</h1>
-            </div>
-            <span class="headingLine" id="firstLine"></span>
-            <br>
-            <span class="headingLine" id="secondLine"></span>
-            <div class="projectButtons">
-                <div class="btn1 btn buttons1">Show code</div>
-                <div class="btn2 btn buttons1">Show live</div>
-            </div>
-            <div class="projectCircle pCircle1"></div>
-            <div class="projectWritten">
-                <div class="projectTxt" id="projectTxt1">Projects</div>
-            </div>
-        </section>
+        <div id="pc1" class="pc">
+            <section class="psection" id='project1'>
+                <div class="projectImg">
+                    <div class="projectSlider" id="projectSlider1"></div>
+                </div>
+                <div class="projectRank">
+                    <h1 id="projectRank1">01</h1>
+                </div>
+                <button id="hideProject" onclick="hideProjects()">HIDE PROJECTS</button>
+                <div class="projectHeading">
+                    <h1 id="projectHeading1">Project number 1</h1>
+                </div>
+                <span class="headingLine" id="firstLine"></span>
+                <br>
+                <span class="headingLine" id="secondLine"></span>
+                <div class="projectButtons">
+                    <div class="btn1 btn buttons1">Show code</div>
+                    <div class="btn2 btn buttons1">Show live</div>
+                </div>
+                <div class="projectCircle pCircle1"></div>
+                <div class="projectWritten">
+                    <div class="projectTxt" id="projectTxt1">Projects</div>
+                </div>
+            </section>
+        </div>
 
 
 
-        <section class="section" id='project2'>
-            <div class="projectImg">
-                <div class="projectSlider" id="projectSlider2"></div>
-            </div>
-            <div class="projectRank">
-                <h1 id="projectRank2">02</h1>
-            </div>
-            <div class="projectHeading">
-                <h1 id="projectHeading2">Project number 2</h1>
-            </div>
-            <span class="headingLine" id="firstLine"></span>
-            <br>
-            <span class="headingLine" id="secondLine"></span>
-            <div class="projectButtons">
-                <div class="btn1 btn buttons2">Show code</div>
-                <div class="btn2 btn buttons2">Show live</div>
-            </div>
-            <div class="projectCircle pCircle2"></div>
-            <div class="projectWritten">
-                <h1 class="projectTxt" id="projectTxt2">Projects</h1>
-            </div>
-        </section>
-
-
-
-
-        <section class="section" id='project3'>
-            <div class="projectImg">
-                <div class="projectSlider" id="projectSlider3"></div>
-            </div>
-            <div class="projectRank">
-                <h1 id="projectRank3">03</h1>
-            </div>
-            <div class="projectHeading">
-                <h1 id="projectHeading3">Project number 3</h1>
-            </div>
-            <span class="headingLine" id="firstLine"></span>
-            <br>
-            <span class="headingLine" id="secondLine"></span>
-            <div class="projectButtons">
-                <div class="btn1 btn buttons3">Show code</div>
-                <div class="btn2 btn buttons3">Show live</div>
-            </div>
-            <div class="projectCircle pCircle3"></div>
-            <div class="projectWritten">
-                <h1 class="projectTxt" id="projectTxt3">Projects</h1>
-            </div>
-        </section>
+        <div id="pc2" class="pc">
+            <section class="psection" id='project2'>
+                <div class="projectImg">
+                    <div class="projectSlider" id="projectSlider2"></div>
+                </div>
+                <div class="projectRank">
+                    <h1 id="projectRank2">02</h1>
+                </div>
+                <button id="hideProject" onclick="hideProjects()">HIDE PROJECTS</button>
+                <div class="projectHeading">
+                    <h1 id="projectHeading2">Project number 2</h1>
+                </div>
+                <span class="headingLine" id="firstLine"></span>
+                <br>
+                <span class="headingLine" id="secondLine"></span>
+                <div class="projectButtons">
+                    <div class="btn1 btn buttons2">Show code</div>
+                    <div class="btn2 btn buttons2">Show live</div>
+                </div>
+                <div class="projectCircle pCircle2"></div>
+                <div class="projectWritten">
+                    <h1 class="projectTxt" id="projectTxt2">Projects</h1>
+                </div>
+            </section>
+        </div>
 
 
 
 
-        <section class="section" id='project4'>
-            <div class="projectImg">
-                <div class="projectSlider" id="projectSlider4"></div>
-            </div>
-            <div class="projectRank">
-                <h1 id="projectRank4">04</h1>
-            </div>
-            <div class="projectHeading">
-                <h1 id="projectHeading4">Project number 4</h1>
-            </div>
-            <span class="headingLine" id="firstLine"></span>
-            <br>
-            <span class="headingLine" id="secondLine"></span>
-            <div class="projectButtons">
-                <div class="btn1 btn buttons4">Show code</div>
-                <div class="btn2 btn buttons4">Show live</div>
-            </div>
-            <div class="projectCircle pCircle4"></div>
-            <div class="projectWritten">
-                <h1 class="projectTxt" id="projectTxt4">Projects</h1>
-            </div>
-        </section>
+        <div id="pc3" class="pc">
+            <section class="psection" id='project3'>
+                <div class="projectImg">
+                    <div class="projectSlider" id="projectSlider3"></div>
+                </div>
+                <div class="projectRank">
+                    <h1 id="projectRank3">03</h1>
+                </div>
+                <button id="hideProject" onclick="hideProjects()">HIDE PROJECTS</button>
+                <div class="projectHeading">
+                    <h1 id="projectHeading3">Project number 3</h1>
+                </div>
+                <span class="headingLine" id="firstLine"></span>
+                <br>
+                <span class="headingLine" id="secondLine"></span>
+                <div class="projectButtons">
+                    <div class="btn1 btn buttons3">Show code</div>
+                    <div class="btn2 btn buttons3">Show live</div>
+                </div>
+                <div class="projectCircle pCircle3"></div>
+                <div class="projectWritten">
+                    <h1 class="projectTxt" id="projectTxt3">Projects</h1>
+                </div>
+            </section>
+        </div>
+
+
+
+
+        <div id="pc4" class="pc">
+            <section class="psection" id='project4'>
+                <div class="projectImg">
+                    <div class="projectSlider" id="projectSlider4"></div>
+                </div>
+                <div class="projectRank">
+                    <h1 id="projectRank4">04</h1>
+                </div>
+                <button id="hideProject" onclick="hideProjects()">HIDE PROJECTS</button>
+                <div class="projectHeading">
+                    <h1 id="projectHeading4">Project number 4</h1>
+                </div>
+                <span class="headingLine" id="firstLine"></span>
+                <br>
+                <span class="headingLine" id="secondLine"></span>
+                <div class="projectButtons">
+                    <div class="btn1 btn buttons4">Show code</div>
+                    <div class="btn2 btn buttons4">Show live</div>
+                </div>
+                <div class="projectCircle pCircle4"></div>
+                <div class="projectWritten">
+                    <h1 class="projectTxt" id="projectTxt4">Projects</h1>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <!-- <div class="alvar">jsal;fasb <br><br> <br> br] -->
 
 
 
@@ -285,7 +305,7 @@
 
 
 
-<!--     
+    <!--     
 
 
     <div class="esehi"></div> -->
