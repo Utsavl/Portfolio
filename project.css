@@ -5,14 +5,15 @@
 }
 
 .pc{
-    /* width: 101vw; */
-    height: 104vh;
-    overflow: scroll;
+    width: 101vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .psection{
-    height: 102vh;
-    overflow: hidden;
+    height: 101vh;
+    /* overflow: hidden; */
 }
 
 #project1{
@@ -155,6 +156,38 @@
     transform-origin: 0 8vw;
 }
 
+.activeDivCont{
+    position: relative;
+    display: flex;
+    /* border: 2px solid black; */
+    width:3vw;
+    height: 100vh;
+    margin: auto 0;
+    margin-left: 92vw;
+    flex-direction: column;
+    margin-top: -95vh;
+    justify-content: center;
+}
+#activeDiv1{
+    margin-top: 0;
+    /* background-color: rgb(246, 178, 50);
+    transform: scale(1.3);
+    animation: changeColor 1s linear infinite; */
+}
+
+.activeProject{
+    background-color: rgb(246, 178, 50);
+    transform: scale(1.3);
+    animation: changeColor 1s linear infinite;
+}
+
+.activeDiv{
+    border: 2px solid rgb(99, 99, 248);
+    width: 100%;
+    height: 5%;
+    margin-top: 2vh;
+}
+
 .projectCircle{
     width: 20vh;
     height: 20vh;
@@ -201,6 +234,15 @@
 
 
 /* Animations */
+
+@keyframes changeColor{
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
 
 
 @keyframes slideOnImg{

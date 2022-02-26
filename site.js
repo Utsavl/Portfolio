@@ -1,6 +1,6 @@
 // declared for slider
-let ele = document.getElementById("slidingBox");
-let height = ele.clientHeight;
+let slidingBox = document.getElementById("slidingBox");
+let heightsb = slidingBox.clientHeight;
 
 // declared for typerwriter animation
 let description = document.getElementById("description");
@@ -12,8 +12,8 @@ var cursorPosition =1;
 
 // It changes the with of slider box
 function changeWidth(percentage){
-    let newWidth = 50 + percentage/2
-    ele.style.width = `${newWidth}vw`;
+    let newWidth = 50 + percentage/2;
+    slidingBox.style.width = `${newWidth}vw`;
 }
 
 window.onscroll = function(){slideBox()}
@@ -22,11 +22,11 @@ function slideBox(){
 
     // Getting the percentage scrolled of slider box
 
-    var gap = ele.getBoundingClientRect().bottom;
+    var gap = slidingBox.getBoundingClientRect().bottom;
     // console.log("the gap is : ",gap);
 
     if (gap>=0){
-        let scrolledPercent  = ((height-gap)/height)*100;
+        let scrolledPercent  = ((heightsb-gap)/heightsb)*100;
         changeWidth(scrolledPercent);
 
     }
