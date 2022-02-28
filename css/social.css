@@ -1,5 +1,5 @@
 .socialContainer{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 90vw;
     height: 26vh;
     text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .iconSection{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 18.2vh;
 }
 
@@ -65,7 +65,7 @@
 
 .socialIcon{
     transition: transform 0.5s;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 40%;
     height: 6vh;
     margin: 0 auto;
