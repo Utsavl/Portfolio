@@ -1,5 +1,7 @@
 let windowHeight = window.innerHeight;
-let projectDepth = (document.getElementById("showProject").getBoundingClientRect().bottom) + windowHeight / 10 + 1;
+let introHeight = document.getElementById("introCont").clientHeight;
+let listHeight = document.getElementById("listCont").clientHeight;
+let projectDepth = (listHeight+introHeight)+ windowHeight*1.35+11;
 let prGaps = []
 let pContainer = document.getElementsByClassName("projectContainer")[0];
 let projectLst = document.getElementsByClassName("pc");
