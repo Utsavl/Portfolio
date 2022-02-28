@@ -216,6 +216,11 @@
     transform: translate(35vw, 0);
 }
 
+#showProject:hover{
+    /* transform: scale(1.3); */
+    background-color: aquamarine;
+}
+
 #hideProject{
     position: absolute;
     width: 20vw;
@@ -296,35 +301,4 @@
 @keyframes projectWritten{
     from{margin-top: 70vh;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* This is for styling of navigation of project slides */
-#fp-nav ul li a span, 
-.fp-slidesNav ul li a span {
-    background: rgb(49, 211, 0);
-    width: 8px;
-    height: 8px;
-    margin: -4px 0 0 -4px;
-}
-     
-#fp-nav ul li a.active span, 
-.fp-slidesNav ul li a.active span, 
-#fp-nav ul li:hover a.active span, 
-.fp-slidesNav ul li:hover a.active span {
-    width: 16px;
-    height: 16px;
-    margin: -8px 0 0 -8px;
-    background: transparent;
-    box-sizing: border-box;
-    border: 2px solid white;
 }
