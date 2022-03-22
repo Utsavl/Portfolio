@@ -206,20 +206,25 @@
 }
 
 #showProject{
-    width: 30vw;
-    height: 10vh;
-    font-size: 1.5em;
+    width: 40vw;
+    color: rgb(8, 2, 70);
+    height: 12vh;
+    font-size: 2.5em;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     padding: 3px;
     margin: 5vh 0;
-    border: 2px outset black;
+    background-color: rgb(209 255 0);
+    /* border: 2px outset black; */
+    box-shadow: 5px 5px 10px #680034, -5px -5px 10px #fb3096;
     border-radius: 40px;
-    transform: translate(35vw, 0);
+    transform: translate(30vw, 0);
+    border-style: none;
 }
 
 #showProject:hover{
     /* transform: scale(1.3); */
-    background-color: aquamarine;
+    background-color: #dd0671;
 }
 
 #hideProject{

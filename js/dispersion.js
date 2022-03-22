@@ -1,37 +1,45 @@
-let photoContainer = document.querySelector(".photoContainer")
+let photoContainer = document.querySelector(".photoContainer");
 
 // Creating boxes for photo particles
-for(let i = 0; i<400; i++){
-    let ele = document.createElement("div");
-    ele.classList.add("photoBox");
-    photoContainer.appendChild(ele);
+for (let i = 0; i < 400; i++) {
+  let ele = document.createElement("div");
+  ele.classList.add("photoBox");
+  photoContainer.appendChild(ele);
 }
 
-
 // Applying the anime.js animation
-let block = document.querySelectorAll(".photoBox")
+let block = document.querySelectorAll(".photoBox");
 let animation = anime.timeline({
-    targets: block,
-    easing: "easeInOutExpo",
-    loop: true,
-
-})
+  targets: block,
+  easing: "easeInOutExpo",
+  loop: true,
+});
 
 animation
-.add({
+  .add({
     delay: 4000,
     scale: 0,
-    translateX: function(){return anime.random(-360,2100);},
-    translateY: function(){return anime.random(-360,2100);},
-    rotate: function(){return anime.random(360,-360);},
+    translateX: function () {
+      return anime.random(-360, 2100);
+    },
+    translateY: function () {
+      return anime.random(-360, 2100);
+    },
+    rotate: function () {
+      return anime.random(360, -360);
+    },
 
-    duration : function(){return anime.random(500,4000);}
-})
-.add({
+    duration: function () {
+      return anime.random(500, 4000);
+    },
+  })
+  .add({
     scale: 1,
-    translateX:0,
+    translateX: 0,
     translateY: 0,
     rotate: 0,
 
-    duration : function(){return anime.random(500,4000);}
-})
+    duration: function () {
+      return anime.random(500, 4000);
+    },
+  });

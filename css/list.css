@@ -15,7 +15,7 @@
     z-index: 1;
     background-color:rgba(0,151, 19, 0.1);
     display: grid;
-    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-columns: 2fr 6fr 2fr;
     margin-top: 4vh;
     justify-content: row;
     transition: transform 0.5s;
@@ -26,23 +26,24 @@
 .listItemContainer:hover > .listItem{
     transform :scale(1.1);
 
-    background-color: rgb(26, 224, 238);
+    background-color: rgb(163, 250, 221);
     border: 2px solid black;
 }
 
 .listItemContainer:hover >.listItem > .itemRank{
-    transform :scale(1.5);
+    transform :scale(2);
 }
 
-.listItemContainer:hover >.listItem > .listText{
-    color: #042561;
-}
+/* .listItemContainer:hover >.listItem > .listText{
+    color: #1d00a0;
+} */
 
 .itemRank{
-    transform: scale(0);
+    transform: scale(0) rotate(50deg);
     transition: transform 0.9s;
     text-align: center;
-    color: #df0086;
+    color: #00076d;
+    
 
 }
 
@@ -51,21 +52,28 @@
     /* color:chartreuse; */
     background-color: #d71389;
     display: block;
+    border-radius: 5px;
 }
 
 .listImg{
-    text-align: center;
     /* border: 3px solid red; */
-    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-size: 3em;
 }
 
-.listImg > img{
-    /* width: 100%; */
-    height: 100%;
+.listImg > i{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 3px;
 }
 
 .listText{
     transition: color 0.5s;
-    color: #05e8ff;
+    color: rgb(36, 36, 158);
     text-align: center;
 }

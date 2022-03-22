@@ -1,25 +1,40 @@
-.dispersionContainer{
-    position: relative;
-    width: 25vw;
-    height:50vh;
+.dispersionContainer {
+  position: relative;
+  width: 25vw;
+  height: 50vh;
 
-    /* border: 2px solid green; */
-    margin: 0px auto;
-    border-bottom: 8px solid #d9227d;
+  /* border: 2px solid green; */
+  margin: 0px auto;
+  border-bottom: 8px solid #d9227d;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
-
-.photoContainer{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    transform-style: preserve-3d;
+.photoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  transform-style: preserve-3d;
 }
+
+/* .photoBox {
+    position: relative;
+  border: 2px solid red;
+  width: 2.5vw;
+  height: 4vh;
+
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  box-sizing: border-box;
+  background-image: url(profile.png);
+  background-size: 25vw 25vw;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 12vw 0;
+} */
 
 .photoBox{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 2.5vw;
     height: 4vh;
     position: relative;
@@ -32,4 +47,3 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-

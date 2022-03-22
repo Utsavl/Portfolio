@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #d9227d;
+}
+
+.slidingBox {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  margin-top: -25vh;
+  background-color: cyan;
+  background-image: linear-gradient(45deg, yellow, red);
+  z-index: 1;
+}
+
+/* for name heading */
+.name {
+  font-size: 6em;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* for gradient color in name */
+#nameText {
+  background-image: linear-gradient(55deg, yellow, rgb(1, 222, 251));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#dot {
+  color: rgb(248, 244, 0);
+}
+
+/* for line below the sliding box (after first 100 vh) */
+hr {
+  height: 10px;
+  border: none;
+  margin: 0;
+  background-color: rgb(255, 130, 57);
+}
+
+/* flex for dispersion and name heading */
+.flexContainer {
+  display: flex;
+}
+
+/* css for both itmes of flex */
+.flexItem {
+  width: 50vw;
+  height: 25vh;
+  text-align: center;
+}
+
+/* for keeping the name heading below the slider box */
+#flexItem1 {
+  z-index: 2;
+}
+
+/* for robot image in left */
+.sliderImage {
+  width: 25vw;
+  height: 45vh;
+  background-image: url(images/img2.png);
+  background-size: contain;
+  margin: 0 auto;
+  margin-top: 5vh;
+  background-repeat: no-repeat;
+  animation: changeColor 2s linear infinite;
+}
+
+/* for hue effect in robot image */
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(-20deg);
+  }
+  50% {
+    filter: hue-rotate(120deg);
+  }
+  100% {
+    filter: hue-rotate(-19deg);
+  }
+}
+
+/* for description below the name heading */
+#description {
+  display: inline;
+  margin: 0 auto;
+  font-size: 2em;
+  margin-top: 5vh;
+  word-wrap: break-word;
+  border-right: 2px solid chartreuse;
+  text-align: center;
+}
+
+.intro {
+  width: 80vw;
+  border-radius: 5px;
+  font-size: 1.3em;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 5vh;
+  background-color: #ff88c3;
+  /* border: 2px solid yellow; */
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
