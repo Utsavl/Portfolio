@@ -17,9 +17,11 @@ body {
 
 /* for name heading */
 .name {
+  /* border: 3px solid white; */
   font-size: 6em;
   text-align: center;
   font-weight: 800;
+  z-index: 2;
 }
 
 /* for gradient color in name */
@@ -44,10 +46,12 @@ hr {
 /* flex for dispersion and name heading */
 .flexContainer {
   display: flex;
+
 }
 
 /* css for both itmes of flex */
 .flexItem {
+  /* border: 3px solid cyan; */
   width: 50vw;
   height: 25vh;
   text-align: center;
@@ -58,11 +62,13 @@ hr {
   z-index: 2;
 }
 
+
+
 /* for robot image in left */
 .sliderImage {
   width: 25vw;
   height: 45vh;
-  background-image: url(images/img2.png);
+  background-image: url(/Portfolio/images/img2.png);
   background-size: contain;
   margin: 0 auto;
   margin-top: 5vh;

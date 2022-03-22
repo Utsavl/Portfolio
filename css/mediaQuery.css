@@ -1,5 +1,86 @@
-@media (max-width: 767px) {
-  * {
-    /* background-color: royalblue; */
+@media (min-width: 480px) and (max-width: 767px) {
+  .dispersionContainer {
+    width: 50vw;
+    left: 25vw;
+    height: 40vh;
   }
+  .thanku{
+    font-size:2em;
+  }
+  #showProject{
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .dispersionContainer {
+    width: 74vw;
+    left: 13vw;
+    height: 40vh;
+  }
+  .thanku{
+    margin-top:10vh;
+    font-size:1em;
+  }
+  #showProject{
+    font-size: 1.5em;
+    width: 60vw;
+    transform: translate(20vw, 0);
+  }
+  .listText{
+    font-size: 0.8em;
+    
+    padding-left: 12%;
+  }
+  .socialHeading{
+    display: block;
+  }
+  .listContainer {
+    width: 85vw;
+  }
+  .listItem {
+    grid-template-columns: 1fr 6fr 0.02fr;
+    padding-left: 8%;
+  }
+  .itemRank {
+    display: none;
+  }
+  .listImage {
+    padding-left: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .sliderImage {
+    display: none;
+  }
+  .name {
+    position: relative;
+    margin-left: -50vw;
+    width: 100vw;
+    margin-top: 43vh;
+    font-size: 3em;
+  }
+  .dcont {
+    position: relative;
+    z-index: 4;
+    margin-left: -50vw;
+  }
+  #description {
+    position: relative;
+    font-size: 1em;
+  }
+  .listContainer {
+    width: 85vw;
+  }
+  .projectRank{
+    display: hidden;
+  }
+  .projectWritten{
+    display: hidden;
+  }
+  .projectImg{
+    height: 50vh;
+    width: 50vw;
+  }
+  
 }
