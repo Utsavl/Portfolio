@@ -4,10 +4,24 @@
     left: 25vw;
     height: 40vh;
   }
-  .thanku{
-    font-size:2em;
+  .thanku {
+    font-size: 2em;
   }
-  #showProject{
+  #showProject {
+    font-size: 1.5em;
+  }
+  #hideProject {
+    font-size: 1em;
+    width: 30vw;
+    margin-left: 12vw;
+    margin-top: 33vh;
+  }
+  .btn {
+    font-size: 1em;
+    width: 120%;
+  }
+  #description {
+    position: relative;
     font-size: 1.5em;
   }
 }
@@ -17,21 +31,21 @@
     left: 13vw;
     height: 40vh;
   }
-  .thanku{
-    margin-top:10vh;
-    font-size:1em;
+  .thanku {
+    margin-top: 10vh;
+    font-size: 1em;
   }
-  #showProject{
+  #showProject {
     font-size: 1.5em;
     width: 60vw;
     transform: translate(20vw, 0);
   }
-  .listText{
+  .listText {
     font-size: 0.8em;
-    
+
     padding-left: 12%;
   }
-  .socialHeading{
+  .socialHeading {
     display: block;
   }
   .listContainer {
@@ -47,6 +61,27 @@
   .listImage {
     padding-left: 40%;
   }
+  #hideProject {
+    font-size: 0.8em;
+    width: 40vw;
+    margin-left: 12vw;
+    margin-top: 33vh;
+  }
+  .btn {
+    font-size: 1em;
+    width: 40vw;
+  }
+  .activeDiv {
+    height: 3%;
+  }
+  #description {
+    position: relative;
+    font-size: 1em;
+  }
+  .btn2:hover{
+    transform: scale(1.2);}
+    .btn1:hover{
+      transform: scale(1.2);}
 }
 
 @media (max-width: 767px) {
@@ -65,22 +100,34 @@
     z-index: 4;
     margin-left: -50vw;
   }
-  #description {
-    position: relative;
-    font-size: 1em;
-  }
   .listContainer {
     width: 85vw;
   }
-  .projectRank{
-    display: hidden;
+  .projectRank {
+    display: none;
   }
-  .projectWritten{
-    display: hidden;
+  .projectWritten {
+    display: none;
   }
-  .projectImg{
+  .projectImg {
     height: 50vh;
     width: 50vw;
   }
-  
+  .activeDivCont {
+    margin-top: -60vh;
+  }
+  .projectHeading {
+    margin-left: 0;
+    margin-top: -47vh;
+  }
+  .projectButtons {
+    margin-top: 10vh;
+  }
+  #firstLine {
+    margin-top: 0;
+    margin-left:65vw;
+  }
+  #secondLine {
+    margin-left: 62vw;
+  }
 }
