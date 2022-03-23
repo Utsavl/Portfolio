@@ -24,6 +24,9 @@
     position: relative;
     font-size: 1.5em;
   }
+  .activeDivCont {
+    margin-top: -85vh;
+  }
 }
 @media (min-width: 0) and (max-width: 480px) {
   .dispersionContainer {
@@ -71,17 +74,19 @@
     font-size: 1em;
     width: 40vw;
   }
-  .activeDiv {
-    height: 3%;
-  }
   #description {
     position: relative;
     font-size: 1em;
   }
-  .btn2:hover{
-    transform: scale(1.2);}
-    .btn1:hover{
-      transform: scale(1.2);}
+  .btn2:hover {
+    transform: scale(1.2);
+  }
+  .btn1:hover {
+    transform: scale(1.2);
+  }
+  .activeDivCont {
+    margin-top: -60vh;
+  }
 }
 
 @media (max-width: 767px) {
@@ -113,9 +118,6 @@
     height: 50vh;
     width: 50vw;
   }
-  .activeDivCont {
-    margin-top: -60vh;
-  }
   .projectHeading {
     margin-left: 0;
     margin-top: -47vh;
@@ -125,9 +127,12 @@
   }
   #firstLine {
     margin-top: 0;
-    margin-left:65vw;
+    margin-left: 65vw;
   }
   #secondLine {
     margin-left: 62vw;
+  }
+  .activeDiv {
+    height: 3%;
   }
 }
