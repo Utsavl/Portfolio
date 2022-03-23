@@ -1,4 +1,4 @@
-let windowHeight = window.innerHeight;
+let windowHeight = window.innerHeight/0.9;
 let introHeight = document.getElementById("introCont").clientHeight;
 let listHeight = document.getElementById("listCont").clientHeight;
 let projectDepth = listHeight + introHeight + windowHeight * 1.37 + 11;
