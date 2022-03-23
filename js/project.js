@@ -59,8 +59,10 @@ let lastScrollStatus = null;
 function showDiffPro(ele, eleId) {
   lastScrollStatus = scrollStatus(ele, lastScrollStatus);
   if (lastScrollStatus == "scrolledUp") {
+    alert("scrolled up");
     showPrePro(ele, eleId);
   } else if (lastScrollStatus == "scrolledDown") {
+    alert("scrolled down");
     showNextPro(ele, eleId);
   } else {
     addAnimation("pc1", "pc4");
