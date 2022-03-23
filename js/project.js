@@ -1,10 +1,13 @@
-let windowHeight = window.innerHeight;
+// let windowHeight = window.innerHeight;
+let sliderEle = document.getElementById("slidingBox")
+let windowHeight = sliderEle.clientHeight;
+// console.log(`the window height is : ${windowHeight} and the slider height is : \n ${windowHeight2}`);
 let introHeight = document.getElementById("introCont").clientHeight;
 let listHeight = document.getElementById("listCont").clientHeight;
 
-if (window.innerWidth<767){
-  windowHeight /= 0.92
-}
+// if (window.innerWidth<767){
+//   windowHeight /= 0.92
+// }
 
 let projectDepth = listHeight + introHeight + windowHeight * 1.37 + 11;
 
