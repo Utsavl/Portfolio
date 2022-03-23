@@ -26,6 +26,7 @@
     perspective: 1000px;
     box-sizing: border-box;
     background-image: url(/Portfolio/images/profile.png);
+    /* background-size: contain; */
     background-size: 25vw 25vw;
     background-position: 12vw 0;
     background-attachment: fixed;
