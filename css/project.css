@@ -29,6 +29,19 @@
 #project4{
     background-image: linear-gradient(90deg, rgb(250, 56, 192), rgb(191, 194, 7));
 }
+#project1 > .projectImg{
+    background-image: url(/Portfolio/images/project1.png) ;
+}
+#project2 > .projectImg{
+    background-image: url(/Portfolio/images/project2.png);
+}
+#project3 > .projectImg{
+    background-image: url(/Portfolio/images/project3.png);
+}
+#project4 > .projectImg{
+    background-image: url();
+}
+
 
 .pCircle1{
     background-color: rgb(248, 91, 91);
@@ -44,13 +57,15 @@
 }
 
 .projectImg{
+    background-repeat: no-repeat;
+    background-size: contain;
     overflow: hidden;
     position: relative;
     width: 40vw;
     height: 80vh;
     margin-left: 7vw;
     top: 50vh; transform: translate(0, -50%);
-    border: 8px solid black;
+    border: 8px solid rgb(49, 6, 6);
 }
 
 .projectSlider{
@@ -60,6 +75,7 @@
 }
 
 .projectRank{
+    position: relative;
     width: 15vw;
     height: 25vh;
     margin-left: 3vw;
@@ -74,6 +90,7 @@
 }
 
 .projectHeading{
+    position: relative;
     /* border: 3px solid pink; */
     height: 15vh;
     margin-left: 30vw;
