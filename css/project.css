@@ -103,7 +103,7 @@
     width: 100%;
     margin: 0 auto;
     font-size: 10vh;
-    line-height: 90%;
+    line-height: normal;
     background-color: rgba(248, 240, 246, 0.7);
 }
 
