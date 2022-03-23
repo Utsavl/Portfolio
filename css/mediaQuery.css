@@ -140,3 +140,10 @@
     height: 3%;
   }
 }
+
+
+@media(min-width:767px){
+  .projectHeading>h1{
+    background-color: rgba(248, 240, 246, 0.7);
+  }
+}
