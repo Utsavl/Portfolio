@@ -39,7 +39,7 @@
     background-image: url(/Portfolio/images/project3.png);
 }
 #project4 > .projectImg{
-    background-image: url();
+    background-image: url(/Portfolio/images/Project4.png);
 }
 
 
@@ -58,14 +58,16 @@
 
 .projectImg{
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position:center;
     overflow: hidden;
     position: relative;
     width: 40vw;
-    height: 80vh;
+    height: 70vh;
     margin-left: 7vw;
     top: 50vh; transform: translate(0, -50%);
     border: 8px solid rgb(49, 6, 6);
+    background-color: #fb3096;
 }
 
 .projectSlider{
@@ -94,14 +96,15 @@
     /* border: 3px solid pink; */
     height: 15vh;
     margin-left: 30vw;
-    margin-top: -76vh;
+    margin-top: -66vh;
 }
 
 .projectHeading > h1{
     width: 100%;
     margin: 0 auto;
     font-size: 10vh;
-    line-height: 80%;
+    line-height: 90%;
+    background-color: rgba(248, 240, 246, 0.7);
 }
 
 .headingLine{
@@ -254,7 +257,7 @@
     font-weight: bolder;
     font-size: 1.2em;
     margin-left: 55vw;
-    margin-top: -86vh;
+    margin-top: -76vh;
     border-radius: 40px;
     color: rgb(33, 62, 66);
     background-color:rgb(176, 251, 0) ;
