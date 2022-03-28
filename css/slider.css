@@ -73,6 +73,7 @@ hr {
   margin: 0 auto;
   margin-top: 5vh;
   background-repeat: no-repeat;
+  background-position: center;
   animation: changeColor 2s linear infinite;
 }
 

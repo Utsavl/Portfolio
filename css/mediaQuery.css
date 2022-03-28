@@ -139,6 +139,10 @@
   .activeDiv {
     height: 3%;
   }
+  .photoBox{
+    background-position: top;
+    background-size: 12em;
+  }
 }
 
 
